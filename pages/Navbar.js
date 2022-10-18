@@ -1,23 +1,23 @@
 import React from 'react'
-
+import Link from 'next/link'
 const Navbar = () => {
   return (
     <header className="bg-white">
   <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
     <div className="flex h-16 items-center justify-between">
       <div className="md:flex md:items-center md:gap-12">
-        <a className="block text-teal-600" href="/">
-          <p className="font-bold text-2xl">Sec "B" Portal</p>
-        </a>
+        <p className="block text-teal-600" href="/">
+          <p className="font-bold text-2xl cursor-pointer">Sec B Portal</p>
+        </p>
       </div>
       <div className="hidden md:block">
         <nav aria-labelledby="header-navigation">
           <h2 className="sr-only" id="header-navigation">Header navigation</h2>
           <ul className="flex items-center gap-6 text-sm">
             <li>
-              <a className="text-gray-500 transition hover:text-green-500/75 hover:font-bold" href="/">
+              <p className="text-gray-500 transition hover:text-green-500/75 hover:font-bold cursor-pointer" href="/">
                 Home
-              </a>
+              </p>
             </li>
            
           </ul>
@@ -25,9 +25,9 @@ const Navbar = () => {
       </div>
       <div className="flex items-center gap-4">
         <div className="sm:flex sm:gap-4">
-          <a className="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow" href="/">
+          <p className="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow cursor-pointer" href="/">
             Login
-          </a>
+          </p>
          </div>
         <div className="block md:hidden">
           <button className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
